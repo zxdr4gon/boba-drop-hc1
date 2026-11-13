@@ -1,86 +1,418 @@
 
-/* PAGE */
+/* =========================================
+   1. GENERAL PAGE STYLING
+   ========================================= */
+
+/* BODY controls the appearance of the entire webpage.
+   These styles apply to the whole page unless another
+   element has its own styling. */
 
 body {
-    background-color: #faf6ef;
-    color: #333333;
+
+    /* Sets the background color of the entire page. */
+    background-color: #faf8f3;
+
+    /* Sets the default text color. */
+    color: #263238;
+
+    /* Changes the font used throughout the website. */
     font-family: Arial, sans-serif;
+
+    /* Removes the browser's default space around the page. */
     margin: 0;
+
 }
 
 
-/* HEADER */
+/* =========================================
+   2. HEADER AND NAVIGATION
+   ========================================= */
+
+/* HEADER is the top part of our website.
+   We give it a different background to separate it
+   visually from the rest of the page. */
 
 header {
-    background-color: #e8d9c5;
+
+    background-color: #e8e3da;
+
+    /* Adds space inside the header. */
     padding: 20px;
+
+    /* Centers the text and navigation links. */
     text-align: center;
+
 }
 
-header h1 {
+
+/* Styles the website name/logo. */
+
+.logo {
+
+    font-size: 22px;
+
+    /* Makes the logo text bold. */
+    font-weight: bold;
+
     color: #624936;
+
+    /* Removes the default underline from links. */
+    text-decoration: none;
+
 }
+
+
+/* NAV UL is the list containing our navigation links. */
+
+nav ul {
+
+    /* Removes the bullet points from the list. */
+    list-style: none;
+
+    /* Removes the default left indentation. */
+    padding: 0;
+
+}
+
+
+/* NAV LI controls each individual navigation item. */
+
+nav li {
+
+    /* Displays navigation items next to each other. */
+    display: inline;
+
+    /* Adds space between the navigation items. */
+    margin: 10px;
+
+}
+
+
+/* Styles the actual navigation links. */
 
 nav a {
+
     color: #624936;
+
+    /* Removes the default link underline. */
     text-decoration: none;
-    margin: 10px;
+
 }
+
+
+/* HOVER means the style applies when someone
+   moves their mouse over a link. */
 
 nav a:hover {
+
+    /* Adds an underline when hovering over a link. */
     text-decoration: underline;
+
 }
 
 
-/* MAIN CONTENT */
+/* =========================================
+   3. MAIN CONTENT
+   ========================================= */
+
+/* MAIN contains all the important sections
+   of our website. */
 
 main {
+
+    /* Adds space around the main content. */
     margin: 30px;
+
 }
+
+
+/* SECTION styles all the major content sections.
+
+   This includes About, Hobbies, and Fun Facts. */
 
 section {
+
+    /* Gives each section a white background. */
     background-color: white;
+
+    /* Adds space between the content and section edges. */
     padding: 20px;
+
+    /* Adds space below each section. */
     margin-bottom: 25px;
+
+    /* Rounds the corners of each section. */
     border-radius: 10px;
+
 }
+
+
+/* =========================================
+   4. HEADINGS AND TEXT
+   ========================================= */
+
+/* H1 is the main heading of the website. */
+
+h1 {
+
+    /* Makes the main heading larger. */
+    font-size: 40px;
+
+}
+
+
+/* H2 is used for section headings. */
 
 h2 {
+
+    /* Gives section headings an orange-brown color. */
     color: #a66b45;
+
 }
+
+
+/* H3 is used for smaller headings,
+   such as the titles of our hobby cards. */
+
+h3 {
+
+    color: #624936;
+
+}
+
+
+/* Paragraph styling.
+
+   LINE-HEIGHT controls the vertical space
+   between lines of text. */
 
 p {
+
     line-height: 1.6;
+
 }
 
 
-/* IMAGE */
+/* EYEBROW is the small uppercase text above headings.
+
+   We use it to give sections a little extra personality. */
+
+.eyebrow {
+
+    color: #d17a54;
+
+    /* Makes the text smaller. */
+    font-size: 12px;
+
+    /* Makes the text bold. */
+    font-weight: bold;
+
+    /* Adds space between individual letters. */
+    letter-spacing: 2px;
+
+}
+
+
+/* SPAN lets us style just part of a heading.
+
+   Here, we change the color of the person's name. */
+
+h1 span {
+
+    color: #d17a54;
+
+}
+
+
+/* =========================================
+   5. HERO SECTION
+   ========================================= */
+
+/* The HERO section is the first thing visitors see.
+
+   We use a different background to make the introduction
+   stand out from the other sections. */
+
+.hero {
+
+    background-color: #f0ebe2;
+
+    /* Adds extra space inside the introduction section. */
+    padding: 30px;
+
+}
+
+
+/* Styles the introduction paragraph. */
+
+.intro {
+
+    color: #687579;
+
+}
+
+
+/* Styles the button-like link in the introduction. */
+
+.main-button {
+
+    /* Changes the button's background color. */
+    background-color: #263238;
+
+    /* Changes the button text to white. */
+    color: white;
+
+    /* Adds space inside the button. */
+    padding: 12px 20px;
+
+    /* Rounds the button's corners. */
+    border-radius: 8px;
+
+    /* Removes the default link underline. */
+    text-decoration: none;
+
+    /* Makes the link behave more like a button,
+       allowing padding to display properly. */
+    display: inline-block;
+
+}
+
+
+/* Changes the button color when someone
+   moves their mouse over it. */
+
+.main-button:hover {
+
+    background-color: #d17a54;
+
+}
+
+
+/* =========================================
+   6. IMAGES
+   ========================================= */
+
+/* Styles the image in the introduction section.
+
+   IMG selects all images on the page. */
 
 img {
+
+    /* Sets the image width to 250 pixels. */
     width: 250px;
+
+    /* Rounds the image corners. */
     border-radius: 10px;
+
 }
 
 
-/* HOBBIES */
+/* =========================================
+   7. HOBBY CARDS
+   ========================================= */
+
+/* CARD styles each individual hobby.
+
+   All three hobby cards use the same class,
+   so one CSS rule styles all of them. */
 
 .card {
+
     background-color: #f5eee5;
+
+    /* Adds space inside each card. */
     padding: 15px;
+
+    /* Adds space between the cards. */
     margin: 10px 0;
+
+    /* Rounds the card corners. */
     border-radius: 8px;
+
 }
 
 
-/* FOOTER */
+/* Makes the hobby emoji larger. */
+
+.card-icon {
+
+    font-size: 30px;
+
+}
+
+
+/* =========================================
+   8. FUN FACTS
+   ========================================= */
+
+/* Changes the background of the Fun Facts section.
+
+   The ID selector (#facts) targets the element
+   with id="facts" in our HTML. */
+
+#facts {
+
+    background-color: #f0ebe2;
+
+}
+
+
+/* Adds space between individual fun facts. */
+
+#facts li {
+
+    margin-bottom: 10px;
+
+}
+
+
+/* =========================================
+   9. FOOTER
+   ========================================= */
+
+/* FOOTER is the bottom part of our website. */
 
 footer {
-    background-color: #624936;
+
+    background-color: #263238;
+
     color: white;
+
     text-align: center;
+
     padding: 20px;
+
 }
 
+
+/* Changes the color of links inside the footer. */
+
 footer a {
-    color: #ffe0b8;
+
+    color: #f2b18e;
+
+    /* Removes the default underline. */
+    text-decoration: none;
+
+}
+
+
+/* Adds an underline when someone hovers
+   over a footer link. */
+
+footer a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* COPYRIGHT is the small text at the bottom. */
+
+.copyright {
+
+    font-size: 12px;
+
+    color: #b0bec5;
+
 }
