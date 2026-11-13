@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Tells the browser which character set to use.
+         This makes symbols and emojis display correctly. -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the website fit properly on phones and tablets. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- The title appears on the browser tab. -->
+    <title>My Little Corner</title>
+
+    <!-- Connects our CSS file to this HTML file.
+         This is how we add colors, fonts, spacing, and other styling. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- HEADER:
+         The header contains the top part of our website.
+         We usually put the website name and navigation here. -->
+    <header>
+
+        <!-- NAV:
+             Navigation lets visitors jump to different sections
+             of the website without scrolling manually. -->
+        <nav>
+
+            <!-- This is the website's name/logo.
+                 The # link simply takes visitors to the top of the page. -->
+            <a href="#" class="logo">my.corner ✳</a>
+
+            <!-- UL means unordered list.
+                 We use a list to organize our navigation links. -->
+            <ul>
+
+                <!-- Each LI is one item in our navigation menu.
+                     The #about part links to the section with id="about". -->
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#hobbies">Hobbies</a></li>
+
+                <li><a href="#facts">Fun Facts</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN:
+         Contains the main content of the website.
+         Everything important that visitors came to see goes here. -->
+    <main>
+
+
+        <!-- HERO SECTION:
+             This is the first section visitors see.
+             It introduces the person and gives the website some personality. -->
+        <section class="hero">
+
+            <!-- DIV is a container used to group related elements.
+                 Here, it groups the text in our introduction. -->
+            <div class="hero-text">
+
+                <!-- A small introductory label above the main heading. -->
+                <p class="eyebrow">WELCOME TO MY WEBSITE</p>
+
+                <!-- H1 is the main heading of the entire webpage.
+                     A webpage should generally have one main H1 heading. -->
+                <h1>Hey, I'm <span>Your Name.</span></h1>
+
+                <!-- SPAN lets us target and style just part of a sentence.
+                     Here, we can give the person's name a different color. -->
+                <p class="intro">
+                    Just another human trying new things,
+                    learning along the way, and figuring
+                    out what makes life interesting.
+                </p>
+
+                <!-- This link takes visitors down to the About section.
+                     We can style a link to look like a button using CSS. -->
+                <a class="main-button" href="#about">
+                    Get to know me →
+                </a>
+
+            </div>
+
+
+            <!-- Another DIV to group our image and its caption. -->
+            <div class="hero-image">
+
+                <!-- IMG displays an image on the webpage.
+                     Replace the URL with a link to your own image.
+                     ALT describes the image for screen readers and
+                     appears if the image cannot load. -->
+                <img
+                    src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700"
+                    alt="A cozy desk with a computer and workspace"
+                >
+
+                <!-- A small caption underneath the image. -->
+                <p>a little corner of the internet ☁</p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ABOUT SECTION:
+             This section tells visitors a little more about the person.
+             The ID allows our navigation link to jump directly here. -->
+        <section id="about" class="section">
+
+            <!-- Small label to introduce this section. -->
+            <p class="eyebrow">01 — THE BASICS</p>
+
+            <!-- H2 is a second-level heading.
+                 It introduces individual sections of the webpage. -->
+            <h2>A little about me.</h2>
+
+            <!-- A paragraph containing some information about yourself.
+                 Replace this text with your own introduction! -->
+            <p class="section-description">
+                Hi! I'm [Your Name]. I'm a student who enjoys
+                exploring new things, spending time with
+                friends, and discovering random interests.
+                This is my little space on the internet.
+            </p>
+
+            <!-- BLOCKQUOTE is used for a quotation.
+                 It can be a favorite quote, personal motto, or saying. -->
+            <blockquote>
+                "You don't have to have it all figured out
+                to enjoy the journey."
+            </blockquote>
+
+        </section>
+
+
+
+        <!-- HOBBIES SECTION:
+             This section shows some of your interests and hobbies. -->
+        <section id="hobbies" class="section">
+
+            <p class="eyebrow">02 — THINGS I ENJOY</p>
+
+            <h2>My current interests.</h2>
+
+
+            <!-- DIV groups all the hobby cards together.
+                 The class allows us to style all these cards in CSS. -->
+            <div class="cards">
+
+
+                <!-- ARTICLE represents a self-contained piece of content.
+                     Each hobby gets its own article/card. -->
+                <article class="card">
+
+                    <!-- An emoji used as a visual icon for the hobby. -->
+                    <div class="card-icon">🎨</div>
+
+                    <h3>Creativity</h3>
+
+                    <p>
+                        Drawing, designing, and making
+                        things just because.
+                    </p>
+
+                </article>
+
+
+                <!-- Second hobby card. -->
+                <article class="card">
+
+                    <div class="card-icon">🎧</div>
+
+                    <h3>Music</h3>
+
+                    <p>
+                        Always looking for new songs
+                        and building playlists.
+                    </p>
+
+                </article>
+
+
+                <!-- Third hobby card. -->
+                <article class="card">
+
+                    <div class="card-icon">🌱</div>
+
+                    <h3>Learning</h3>
+
+                    <p>
+                        Exploring new skills and
+                        trying things I've never done.
+                    </p>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FUN FACTS SECTION:
+             A place for random, interesting, or funny facts about yourself. -->
+        <section id="facts" class="section facts">
+
+            <p class="eyebrow">03 — RANDOM STUFF</p>
+
+            <h2>Some fun facts.</h2>
+
+            <!-- Another unordered list.
+                 Each LI represents one fun fact. -->
+            <ul>
+
+                <li>My favorite food is __________.</li>
+
+                <li>I could talk about __________ for hours.</li>
+
+                <li>My dream destination is __________.</li>
+
+                <li>One thing on my bucket list is __________.</li>
+
+            </ul>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER:
+         The footer is the bottom part of the website.
+         It usually contains credits, contact information, and links. -->
+    <footer>
+
+        <!-- Give yourself credit for making the website! -->
+        <p>Made with ♡ by [Your Name]</p>
+
+
+        <!-- Links to your GitHub profile and email address.
+             Replace these example links with your own information. -->
+        <p>
+
+            <a href="https://github.com/" target="_blank">
+                My GitHub
+            </a>
+
+            ·
+
+            <a href="mailto:hello@example.com">
+                Say hello
+            </a>
+
+        </p>
+
+
+        <!-- A small copyright notice at the bottom. -->
+        <p class="copyright">© 2026 My Little Corner</p>
+
+    </footer>
+
+
+</body>
+
+</html>
